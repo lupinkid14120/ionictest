@@ -1,0 +1,53 @@
+div#header{
+  background-image: url("../../../assets/Rectangle\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+  margin: 0px;
+}
+
+#header h1{
+  position: relative;
+  top: 50%;
+  width: 100%;
+  /* identical to box height */
+  font-size: 60px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0px;
+  text-align: center;
+}
+
+ion-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+ion-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+ion-buttons ion-button{
+  color: #FFFFFF;
+  width: 280px;
+  height: 46px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold ;
+}
+
+ion-buttons ion-button:first-child{
+  background-color: #DB4437;
+  margin: 50px 0;
+}
+
+ion-buttons ion-button:last-child{
+  background-color: #3B5998;
+}

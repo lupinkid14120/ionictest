@@ -44,7 +44,7 @@
   <ion-buttons>
     <ion-button (click)="prev(slides)" [hidden]="isFirst || isLast">Previous</ion-button>
     <ion-button (click)="next(slides)" [hidden]="isLast">Next</ion-button>
-    <ion-button [hidden]="!isLast">START IMMEDIATELY</ion-button>
+    <ion-button [hidden]="!isLast" routerLink="../auth">START IMMEDIATELY</ion-button>
   </ion-buttons>
 
 </ion-content>
