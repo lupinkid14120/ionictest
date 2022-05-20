@@ -1,0 +1,50 @@
+<ion-content>
+  <div id="header">
+    <ion-button fill="clear" routerLink="../auth" [hidden]="isLast">Skip</ion-button>
+    <h1 [hidden]="!isFirst">Hello!</h1>
+  </div>
+
+  <ion-slides
+    #slides
+    pager
+    (ionSlideDidChange)="slideChanged()"
+  >
+    <ion-slide>
+      <div>
+        <h2>Start</h2>
+        <span>Take 30 seconds to see how we can help you lose weight and be healthier?</span>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div>
+        <h2>Build habits</h2>
+        <span>Starting from being more mindful of your habits, this is the foundation for lasting change</span>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div>
+        <h2>Diverse diet</h2>
+        <span>A wide variety of weight loss diets are available for you to choose from</span>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div>
+        <h2>Record diary</h2>
+        <span>Choose healthy foods, keep a food diary, exercise to help you control your weight</span>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div>
+        <h2>Be persistent!</h2>
+        <span>And finally, it's important to be persistent. You will notice a visible change in just 1 month!</span>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-buttons>
+    <ion-button (click)="prev(slides)" [hidden]="isFirst || isLast">Previous</ion-button>
+    <ion-button (click)="next(slides)" [hidden]="isLast">Next</ion-button>
+    <ion-button [hidden]="!isLast">START IMMEDIATELY</ion-button>
+  </ion-buttons>
+
+</ion-content>
