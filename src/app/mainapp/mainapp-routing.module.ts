@@ -7,7 +7,11 @@ const routes: Routes = [
   {
     path: '',
     component: MainappPage
+  },  {
+    path: 'setting',
+    loadChildren: () => import('./setting/setting.module').then( m => m.SettingPageModule)
   }
+
 ];
 
 @NgModule({
